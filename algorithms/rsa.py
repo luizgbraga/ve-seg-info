@@ -1,4 +1,4 @@
-from utils.arithmetic import find_mod_inv, gcd
+from utils.rsa.arithmetic import find_mod_inv, gcd
 
 
 class RSA:
