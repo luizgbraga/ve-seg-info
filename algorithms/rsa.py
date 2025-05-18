@@ -1,7 +1,8 @@
 from utils.rsa.arithmetic import find_mod_inv, gcd
-
+from memory_profiler import profile
 
 class RSA:
+    @profile
     def __init__(self, p: int, q: int, e: int):
         self._p = p
         self._q = q

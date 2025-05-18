@@ -3,8 +3,10 @@ from utils.kyber.matrix import gen_random_matrix
 from utils.kyber.noise import gen_noise
 from utils.kyber.matrix_arithmetic import multiply_matrix_vector
 from utils.kyber.compression import compress_vector
+from memory_profiler import profile
 
 class Kyber:
+    @profile
     def __init__(self, k, eta, q, d_t):
         self.k = k
         self.eta = eta
