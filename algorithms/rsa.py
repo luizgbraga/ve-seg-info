@@ -1,12 +1,21 @@
+import logging
+
 from Crypto.Util.number import getStrongPrime
 from memory_profiler import profile
 
 from utils.rsa.arithmetic import find_mod_inv, gcd
 
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 
 class RSA:
     @profile
-    def __init__(self, bits: int = 2048, e: int = 65537):
+    def __init__(self, bits: int = 3072, e: int = 65537):
+        if bits < 3072:
+            logger.warning(
+                "RSA bit length is less than 3072; this might be unsafe for cryptographic use."
+            )
         self.e = e
         self._generate_keys(bits)
 
