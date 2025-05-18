@@ -5,7 +5,6 @@ from memory_profiler import profile
 
 from utils.rsa.arithmetic import find_mod_inv, gcd
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
