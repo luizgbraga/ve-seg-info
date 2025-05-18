@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def poly_mul(a, b, q):
     res = np.convolve(a, b) % q
     result = np.zeros(256, dtype=int)
