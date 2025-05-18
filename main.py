@@ -1,6 +1,6 @@
 from time import time
 
-from algorithms.kyber import Kyber
+from algorithms.kyber_versions import Kyber512, Kyber768, Kyber1024
 from algorithms.rsa import RSA
 from utils.rsa.files import save_to
 
@@ -15,14 +15,9 @@ save_to("keys/rsa_sk.txt", rsa.private_key)
 
 
 ## Kyber
-k = 2
-eta = 2
-q = 3329
-d_t = 11
-
 kyber_start_time = time()
 
-kyber = Kyber(k, eta, q, d_t)
+kyber = Kyber512()
 
 kyber_end_time = time()
 
