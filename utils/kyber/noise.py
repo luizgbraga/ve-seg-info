@@ -1,5 +1,7 @@
 import random
+
 import numpy as np
+
 
 def gen_noise(k, eta):
     noise_vector = np.zeros((k, 256), dtype=int)
@@ -9,6 +11,6 @@ def gen_noise(k, eta):
             for _ in range(eta):
                 bit_a = random.getrandbits(1)
                 bit_b = random.getrandbits(1)
-                noise += (bit_a - bit_b)
+                noise += bit_a - bit_b
             noise_vector[i][j] = noise
     return noise_vector
