@@ -20,8 +20,8 @@ The project is structured as follows:
 
 1.  **Clone the repository (if applicable):**
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone [<repository_url>](https://github.com/luizgbraga/ve-seg-info)
+    cd ve-seg-info
     ```
 
 2.  **Create a virtual environment (recommended):**
