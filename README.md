@@ -20,17 +20,22 @@ The project is structured as follows:
 
 1.  **Clone the repository (if applicable):**
     ```bash
-    git clone [<repository_url>](https://github.com/luizgbraga/ve-seg-info)
+    git clone https://github.com/luizgbraga/ve-seg-info
     cd ve-seg-info
     ```
 
 2.  **Create a virtual environment (recommended):**
     ```bash
     python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    source venv/bin/activate
+    ```
+    Or, on windows use:
+    ```bash
+    python3 -m venv venv
+    venv\Scripts\activate
     ```
 
-3.  **Install dependencies:**
+4.  **Install dependencies:**
     Make sure you have pip installed. Then, run the following command in the project's root directory (where `requirements.txt` is located):
     ```bash
     pip install -r requirements.txt
@@ -40,7 +45,7 @@ The project is structured as follows:
     - `numpy`
     - `psutil`
 
-4.  **Run the project:**
+5.  **Run the project:**
     Execute the benchmark script:
     ```bash
     bash job.sh
