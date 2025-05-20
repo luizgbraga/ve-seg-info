@@ -19,6 +19,7 @@ class Kyber:
         self.secret_key = None
         self.generate_keys()
 
+    @profile
     def generate_keys(self):
         rho = secrets.token_bytes(32)
         matrix = gen_random_matrix(self.k, rho, self.q)

@@ -19,6 +19,7 @@ class RSA:
         self.e = e
         self._generate_keys(bits)
 
+    @profile
     def _generate_keys(self, bits: int):
         half_bits = bits // 2
         while True:
